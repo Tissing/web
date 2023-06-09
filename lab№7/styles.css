@@ -1,0 +1,298 @@
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+p{
+    line-height: 190%;
+}
+
+
+header
+{
+    height: 187px;
+    background: url(source/header-wrapper-bg.png) left top;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu
+{
+    display: flex; 
+    margin: auto; 
+    justify-content: space-between;
+    align-items: center;
+    width: 1000px;
+}
+
+.logo
+{
+    width: 221px;
+    height: 110px;
+    background: url(source/logo-bg.png) no-repeat;
+    line-height: 110px;
+    
+    text-align: center;
+    font-family: 'Cookie', cursive;
+    font-size: 60px;
+    font-weight: 400;
+    color: white;
+}
+
+div.buttons a
+{
+    margin-right: 30px;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    color: white;
+    line-height: 16px;
+    padding: 5px;
+    letter-spacing: -1px;
+}
+
+.home
+{
+    background: #881D1D;
+    border-radius: 5px;
+}
+
+
+
+
+
+.place_for_banner
+{
+    background: url(source/banner-wrapper-bg.png);
+    padding: 32px 0 32px 0;
+}
+
+.banner 
+{
+    background: url(source/banner-image.jpg);
+    width: 960px;
+    height: 278px;
+    text-align: center;
+    border-radius: 9px;
+    margin: auto;
+    display: flex;
+
+}
+
+.banner h2
+{
+    background: url(source/banner-caption-bg.png) no-repeat left bottom;
+    width: 960px;
+    padding: 17px;
+    font-family: 'Cookie',cursive;
+    font-size: 35px;
+    font-weight: normal;
+    color: white;
+    border-bottom-left-radius: 9px;
+    border-bottom-right-radius: 9px;
+    align-self: flex-end;
+}
+
+
+
+
+
+.page
+{
+    background: url(source/page-wrapper-bg.png);
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+
+    padding: 30px 0px;
+}
+
+.post
+{
+    width: 630px;
+    height: auto;
+    padding: 30px 0px;
+    margin-left: auto;
+    margin-right: 37px;
+    background-color: white;
+    border: 1px solid #E5D0D0;
+    border-radius: 5px;
+}
+
+.text
+{
+    padding: 30px 30px 0px 30px ;
+}
+
+.text h2
+{
+    padding: 0px 0px 20px 0px;
+    font-family: 'Arvo',serif;
+    font-size: 34px;
+    color: #4E2B22;
+    letter-spacing: -2px;
+    font-weight: 400;
+}
+
+.text > p
+{
+    margin-top: 25px;
+    line-height: 190%;
+}
+
+.title
+{
+    height: 38px;
+    padding: 0px 0px 0px 30px ;
+    background: url(source/post-posted-bg.png) no-repeat;
+    letter-spacing: -1px;
+    line-height: 38px;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    color: white;
+}
+
+.titleinfo
+{
+    height: 38px;
+    padding: 0px 0px 0px 30px ;
+    background: url(source/sidebar-title-bg.png) no-repeat right top;
+    line-height: 38px;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    color: white;
+    font-weight: 400;
+    margin: 20px 0;
+    width: 295px;
+    letter-spacing: -1px;
+}
+
+.info
+{
+    width: 330px;
+    border-radius: 5px;
+    margin-right:auto;
+    color: #E1C9C4;
+    /*background: url(source/sidebar-bg-02.png) repeat-y;*/
+}
+
+.pic
+{
+    border-radius: 5px;
+    width: 570px;
+    height: 196px;
+}
+
+.meta
+{
+    height: 66px;
+    margin-top: 30px;
+    padding: 0px 25px;
+    background: url(source/posted-meta-bg.png) no-repeat;
+    font-family: 'Arvo', serif;
+    font-size: 16px;
+    color: #572F26;
+    display: flex;
+    align-items: center;
+}
+
+.meta a
+{
+    text-decoration: underline;
+}
+
+li
+{
+    border-top: 1px solid #371E18;
+    margin: 0px 60px 0px 30px;
+    padding: 10px 0px 10px 0px;
+    color: white;
+}
+
+
+
+
+
+
+
+
+footer
+{
+    background: url(source/footer-content-bg-01.png);
+}
+
+.widgets
+{
+    background: url(source/footer-content-bg-02.png);
+    display: flex;
+    margin: auto;
+    padding: 40px 0px 30px 0px;
+}
+
+.widget
+{
+    width: 300px;   
+    margin: 0px 20px;
+}
+
+.content
+{
+    color: white;
+    background: url(source/box-widget-bg-02.png);
+    padding: 20px 30px 10px 30px;
+}
+
+.content h1
+{
+    font-size: 16px;
+    font-family: 'Arvo', serif;
+    font-weight: 400;
+
+    padding: 0px 0px 20px 0px;
+}
+
+.content p
+{
+    color: #E1C9C4;
+}
+
+.topborder
+{
+    background: url(source/box-widget-bg-01.png) no-repeat left top; 
+    height: 15px;
+}
+
+.btmborder
+{
+    background: url(source/box-widget-bg-03.png) no-repeat left top; 
+    height: 15px;
+}
+
+
+
+.copyright
+{
+    background: url(source/footer-bg.png) repeat-x;
+    margin: auto;
+    height: 155px;
+    color: #784F45;
+}
+
+.copyright p
+{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.copyright a
+{
+    text-decoration: underline;
+    color: inherit;
+}

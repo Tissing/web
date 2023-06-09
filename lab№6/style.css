@@ -1,0 +1,72 @@
+div > p {
+}
+div > h2 {
+}
+#test > p {
+}
+#test > h2 {
+}
+.bbb {
+}
+#test > .bbb {
+}
+p.bbb {
+}
+h2.bbb {
+}
+#test > p.bbb {
+}
+.bbb,
+.xxx {
+}
+
+p.bbb,
+h2.xxx {
+}
+
+#test > p.bbb,
+#test > p.xxx {
+}
+
+.fff {
+}
+
+.fff > p {
+}
+
+p.fff {
+}
+
+.fff > .bbb {
+}
+
+.fff > h2.bbb {
+}
+
+#test > a:link,
+#test > a:visited {
+  color: red;
+  text-decoration: underline;
+}
+#test > a:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+a.www:link,
+a.www:visited {
+  color: blue;
+  text-decoration: underline;
+}
+
+a.www:hover {
+  color: blue;
+}
+
+#test > a.www:hover {
+  color: aqua;
+}
+
+.eee > a.www:visited {
+  color: brown;
+}

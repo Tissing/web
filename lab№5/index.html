@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №5</title>
+</head>
+<body>
+    <p id="1" > Задание №1: </p>
+    <script>
+        let str = 'hdfgv';
+        document.getElementById(1).innerHTML += str[0]+' '+str[1]+' '+str[4];
+    </script>
+
+    <p id="2" > Задание №2: </p>
+    <script>
+        document.getElementById("2").innerHTML += 60*60 + " секунд";
+    </script>
+
+    <p id="3" > Задание №3: alert():</p>
+    <script>
+        var num = 1;
+        num += 12;
+        num -= 14;
+        num *= 5;
+        num /= 7;
+        num++;
+        num--;
+        //document.getElementById('3').innerHTML += ' '+num;
+        alert("Задание №3: " + num);
+    </script>
+
+    <p id="4" > Задание №4: alert()</p>
+    <script>
+        num = 3;
+        alert("Задание №4: "+num);
+    </script>
+
+    <p id="5" > Задание №5:</p>
+    <p id="5.1" ></p>
+    <p id="5.2" ></p>
+    <p id="5.3" ></p>
+    <p id="5.4" ></p>
+    <script>
+        let a = 10, b = 2;
+        document.getElementById("5.1").innerHTML ="a+b=" +(a+b);
+        document.getElementById("5.2").innerHTML ="a-b=" +(a-b);
+        document.getElementById("5.3").innerHTML ="a*b=" +(a*b);
+        document.getElementById("5.4").innerHTML ="a/b=" +(a/b);
+    </script>
+
+    <p id="6" > Задание №6: </p>
+    <script>
+        let c=15, d=2;
+        let result = c + d;
+        document.getElementById("6").innerHTML += result;
+    </script>
+
+    <p id="7" > Задание №7: </p>
+    <script>
+        a = 10;
+        b = 2;
+        c = 5;
+        document.getElementById("7").innerHTML += (a + b + c);
+    </script>
+    <p id="8" > Задание №8: </p>
+    <script>
+        a = 17;
+        b = 10;
+        c = a - b;
+        d = 7;
+        result = c + d;
+        document.getElementById("8").innerHTML += result;
+    </script>
+
+    <p id="9" > Задание №9:</p>
+    <p id="9.1" >Секунд в часах:  </p>
+    <p id="9.2" >Секунд в сутках: </p>
+    <p id="9.3" >Секунд в месяце: </p>
+    <script>
+        let hour = 60*60;
+        let day = 24 * hour;
+        let mounth = day * 31; 
+        document.getElementById("9.1").innerHTML += hour;
+        document.getElementById("9.2").innerHTML += day;
+        document.getElementById("9.3").innerHTML += mounth;
+    </script>
+
+    <p id="10" > Задание №10: </p>
+    <script>
+        let now = new Date();
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+        document.getElementById("10").innerHTML += " " +hours+":"+minutes+":"+seconds;
+    </script>
+
+    <p id="11" > Задание №11: </p>
+    <script>
+        num = 9;
+        document.getElementById('11').innerHTML += 9**2;
+    </script>
+
+    <p id="12" > Задание №12: </p>
+    <script>
+        let sum = 0; [1, 2, 3 ,4 ,5].forEach(element => { element % 2 == 0  ? sum += Math.sqrt(element) :  sum += 0;   });
+        document.getElementById('12').innerHTML += sum;
+    </script>    
+
+    <p id="13" > Задание №13: </p>
+    <script>
+        document.getElementById('13').innerHTML += 1.15 + 2.30;
+    </script>
+
+    <p id="14" > Задание №14: alert()</p>
+    <script>
+        let x = 5;
+        alert("Задание №14: " + x++);
+    </script>
+
+    <p id="15" > Задание №15: </p>
+    <script>
+        document.getElementById('15').innerHTML += [ ] + false - null + true ;
+    </script>
+
+    <p id="16" > Задание №16: console.log()</p>
+    <script>
+        let y = 1; 
+        x = y = 2;
+        console.log(x); 
+    </script>
+
+    <p id="17" > Задание №17: </p>
+    <script>
+        document.getElementById('17').innerHTML += [ ] + 1 + 2;
+    </script>
+
+    <p id="18" > Задание №18: </p>
+    <p id="a6" > a6= </p>
+    <p id="a7" > a7= </p>
+    <p id="a8" > a8= </p>
+    <p id="a9" > a9= </p>
+    <p id="a10" >a10=  </p>
+    <script>
+
+        let a6 = 5 % 3;
+        let a7 = 3 % 5;
+        let a8 = 5 + '3';
+        let a9 = '5' - 3;
+        let a10 = 75 + 'кг';
+        document.getElementById('a6').innerHTML += a6;
+        document.getElementById('a7').innerHTML += a7;
+        document.getElementById('a8').innerHTML += a8;
+        document.getElementById('a9').innerHTML += a9;
+        document.getElementById('a10').innerHTML += a10;
+
+    </script>
+    
+    <p id="19" > Задание №19: </p>
+    <script>
+        let height = 23;
+        let width = 10;
+        let s = height * width;
+        document.getElementById('19').innerHTML += s;
+    </script>   
+
+    <p id="20" > Задание №20: </p>
+    <script>
+        let heightC = 10;
+        let dC = 10;
+        let v = 3.14 * (dC / 2)**2 * heightC;
+        //Math.PI
+         document.getElementById('20').innerHTML += v;
+    </script>  
+    
+    <p id="21" > Задание №21: </p>
+    <script>
+        let S = 2 * 10**6;
+        let p = 1 + 0.10;
+        let years = 5;
+        let perepl =  S * years * ( p - 1);
+        document.getElementById('21').innerHTML += perepl;
+    </script>   
+
+    <p id="22" > Задание №22: </p>
+    <p id="str" >typeof str= </p>
+    <p id="num" >typeof num= </p>
+    <p id="bool" >typeof bool= </p>
+    <p id="txt" >typeof txt= </p>
+    <script>
+        str = "Привет";
+        num = 123;
+        let bool = true;
+        let txt = "true";
+        document.getElementById('str').innerHTML += typeof str;
+        document.getElementById('num').innerHTML += typeof num;
+        document.getElementById('bool').innerHTML += typeof bool;
+        document.getElementById('txt').innerHTML += typeof txt;
+    </script>   
+
+    <p id="23" > Задание №23: </p>
+    <script>
+        num = 123456;
+        document.getElementById('23').innerHTML += -1 * num;
+    </script>   
+</body>
+</html> 
