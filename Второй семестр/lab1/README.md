@@ -220,7 +220,10 @@ console.log(typeof(txt))
 23. 
 ```javascript
 console.log(-1 * num)
-``` 
+```
+
+<h2 align="center">Вывод</h2>
+Повторил лабораторную по JS, только выполнил его в Node.js
 
 
 
