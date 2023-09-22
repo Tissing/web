@@ -110,7 +110,7 @@ function lab11()
 
 function lab12()
 {
-    console.log('Задание 13')
+    console.log('Задание 12')
     console.log([1, 2, 4, 5, 9, 10].filter(num=> {if(num % 2 == 0) return num}).reduce((total, num)=> total + Math.sqrt(num), 0))
     console.log("---------------------------------\n")
     
@@ -126,14 +126,14 @@ function sum(total, num){
 
 function lab13()
 {
-    console.log('Задание 14')
+    console.log('Задание 13')
     console.log(1.15 + 2.30)
     console.log("---------------------------------\n")
 }
 
 function lab14()
 {
-    console.log('Задание 15')
+    console.log('Задание 14')
     let x = 5
     console.log(x++)
     console.log(x)
@@ -142,14 +142,14 @@ function lab14()
 
 function lab15()
 {
-    console.log('Задание 16')
+    console.log('Задание 15')
     console.log([ ] + false - null + true )
     console.log("---------------------------------\n")
 }
 
 function lab16()
 {
-    console.log('Задание 17')
+    console.log('Задание 16')
     let y = 1;
     let x = y = 2;
     console.log(x);
@@ -158,14 +158,14 @@ function lab16()
 
 function lab17()
 {
-    console.log('Задание 18')
+    console.log('Задание 17')
     console.log( [ ] + 1 + 2)
     console.log("---------------------------------\n")
 }
 
 function lab18()
 {
-    console.log('Задание 19')
+    console.log('Задание 18')
     let a6 = 5 % 3
     let a7 = 3 % 5
     let a8 = 5 + '3'
@@ -181,7 +181,7 @@ function lab18()
 
 function lab19()
 {
-    console.log('Задание 20')
+    console.log('Задание 19')
     let height = 23, width = 10
     let s = 0.5 * height * width
     console.log(s)
@@ -190,7 +190,7 @@ function lab19()
 
 function lab20()
 {
-    console.log('Задание 21')
+    console.log('Задание 20')
     let heightC = 10, dC = 4
     let v = heightC * (dC/2)* (dC/2) * 3.14
     console.log(v)
@@ -199,7 +199,7 @@ function lab20()
 
 function lab21()
 {
-    console.log('Задание 22')
+    console.log('Задание 21')
     let S = 2000000, p = 10, years = 5
     let perepl = 0
     for(let i = 0; i < years; i++)
@@ -214,7 +214,7 @@ function lab21()
 
 function lab22()
 {
-    console.log('Задание 23')
+    console.log('Задание 22')
     let str = "Привет",
         num = 123,
         flag = true,
@@ -229,7 +229,7 @@ function lab22()
 
 function lab23(num)
 {
-    console.log('Задание 24')
+    console.log('Задание 23')
     console.log(-1 * num)
     console.log("---------------------------------\n")
 }
@@ -257,4 +257,3 @@ lab20()
 lab21()
 lab22()
 lab23()
-lab24(1)
