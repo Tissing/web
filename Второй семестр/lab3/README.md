@@ -517,6 +517,15 @@ function explode(s) {
 
 27. 
 ```javascript
+function getParticipants(handshakes){
+  if (handshakes == 0) return 0;
+  let m = 0;
+  while (m*(m-1) < handshakes * 2)
+  {
+    m++;
+  }
+  return m;
+}
 
 ```
 
