@@ -118,13 +118,13 @@ function func6()
 function func7()
 {
     let n = parseInt(prompt("Введите год"));
-    let result = "";
-
     n = n % 60;
-    let animal = n % 12;
-    let color = Math.round(n % 12) + 1;
+    let animal = ["Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Корова", "Тигр", "Заяц", "Дракон", "Змея", "Лошадь", "Овца"];
+    let color = ["Белый","Белый","Черный", "Черный", "Зеленый", "Зеленый", "Красный", "Красный", "Желтый", "Желтый"];
+    let num_animal = n % 12;
+    let num_color = n % 10;
+    alert(`${animal[num_animal]} ${color[num_color]}`);
 
-    /////////
 }
 
 function func8()
