@@ -75,10 +75,6 @@
 <h2 align="center">Решение задач</h2>
 
 
-
-<h2 align="center">Вывод</h2>
-В этой лабораторной работе я научился создавать бота в телеграмм на javascript.
-
 ### app.js
 ```javascript
 const express = require("express");
@@ -220,7 +216,13 @@ alert(card +" "+ mast);
 
 7. 
 ```javascript
-
+let n = parseInt(prompt("Введите год"));
+n = n % 60;
+let animal = ["Обезьяна", "Петух", "Собака", "Свинья", "Крыса", "Корова", "Тигр", "Заяц", "Дракон", "Змея", "Лошадь", "Овца"];
+let color = ["Белый","Белый","Черный", "Черный", "Зеленый", "Зеленый", "Красный", "Красный", "Желтый", "Желтый"];
+let num_animal = n % 12;
+let num_color = n % 10;
+alert(`${animal[num_animal]} ${color[num_color]}`);
 ```
 
 8. 

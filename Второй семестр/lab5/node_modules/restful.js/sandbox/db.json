@@ -1,0 +1,36 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "test",
+      "author": "typicode"
+    },
+    {
+      "title": "test",
+      "id": 2
+    },
+    {
+      "title": "test",
+      "id": 3
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  },
+  "admin": [],
+  "api": [],
+  "authenticate": [
+    {
+      "email": "admin@wms.com",
+      "password": "a",
+      "id": 1
+    }
+  ]
+}
