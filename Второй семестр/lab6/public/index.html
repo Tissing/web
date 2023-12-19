@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab6</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <button onclick="alert('alert')">Задача 1</button><br>
+    <div>
+        <input type="text" id="input"/><br>
+        <button onclick="func2()">Задача 2</button><br>
+        <button onclick="func3()">Задача 3</button><br>
+        <button onclick="func4()">Задача 4</button><br>
+    </div>
+    <div>
+        <button onclick="func5()">Задача 5</button><br>
+        <input type="text" id="input1"/><br>
+        <input type="text" id="input2"/><br>
+    </div>
+    <button onclick="func6()" id="button6">Задача 6</button><br>
+    <div>
+        <button onclick="func7()">Задача 7</button><br>
+        <input type="text" id="input3"/><br>
+    </div>
+    <div>
+        <p>Задача №8</p>
+        <input type="text" id="input4" /><br>
+        <button onclick="inputon()">Включить</button>
+        <button onclick="inputoff()">Выключить</button><br>
+    </div>
+    <button onmouseenter="func9()">Задача 9</button><br>
+    <button ondblclick="func10()">Задача 10</button><br>
+    <div onmouseenter="func11()" style="height: 100px; width: 100px;">
+        <p>Задача 11</p>
+    </div>
+    <div>
+        <p><img id="image" src="cat.jpg"></p>
+        <button onclick="func12()">Изменить</button><br>
+    </div>
+    <button onclick="alert(this)">Задача 13</button><br>
+    <div>
+        <p>Задача 14</p>
+        <input type="text" id="input5"><br>
+        <button onclick="func14()">change</button>
+    </div>
+    <button onclick="this.setAttribute('disabled','')">Задача 15</button><br>
+    <button onclick="func16(this)">Задача 16</button><br>
+    <button onclick="func17()">Задача 17</button><br>
+    <div>
+        <p>Задача 18</p>
+        <input onclick="func18()" type="button" id="hider" value="Нажмите, чтобы спрятать текст"/> 
+        <div id="hide">Текст</div> 
+    </div>
+    <button onclick="this.style.visibility = 'hidden'">Задача 19</button><br>
+    <div>
+        <p>Задача 20</p>
+        <p>a: <input type="number" id="a"></p>
+        <p>b: <input type="number" id="b"></p>
+        <p><button onclick="sum()">+</button><button onclick="difference()">-</button></p>
+        <p><button onclick="multiply()">*</button><button onclick="division()">/</button></p>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
