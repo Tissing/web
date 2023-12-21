@@ -1,3 +1,4 @@
+let count = 0;
 function func2()
 {
     let text = prompt("Изменение input");
@@ -79,8 +80,8 @@ function func15()
 
 function func16(element)
 {
-    element.count++;
-    element.innerText = element.count;
+    count++;
+    element.innerText = count.toString();
 }
 
 function func17()
