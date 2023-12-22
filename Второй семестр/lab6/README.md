@@ -195,8 +195,9 @@ else
 ```
 
 14. 
-```javascript
-
+```html
+<input type="text" id="input5" value="text">
+<button onclick="this.previousElementSibling.value = prompt()">change</button>
 ```
 
 15. 
@@ -206,7 +207,11 @@ this.setAttribute('disabled','');
 
 16. 
 ```javascript
-
+function func16(element)
+{
+    count++;
+    element.innerText = count.toString();
+}
 ```
 
 17. 

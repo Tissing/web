@@ -68,10 +68,6 @@ function func12()
         element.setAttribute('src','cat.jpg');
 }
 
-function func14()
-{
-    
-}
 
 function func15()
 {
