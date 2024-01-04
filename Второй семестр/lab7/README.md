@@ -485,7 +485,38 @@ transporter.sendMail(mailOptions);
 
 ### Парсинг
 ```javascript
+const url = req.query.url;
 
+const response = await axios.get(url); 
+const res = response.data.match(/<span class=\"text-bold color-fg-default\">(.*)<\/span>/g);
+const str = "<span class=\"p-nickname vcard-username d-block\" itemprop=\"additionalName\">";
+let name = "";
+let i = response.data.indexOf(str) + str.length + 1;
+while(response.data[i] != '<'){
+    name += response.data[i];
+    i++;
+}
+name = name.trim();
+const followers = res[0].substring(res[0].indexOf(">") + 1, res[0].lastIndexOf("<"));
+const following = res[1].substring(res[1].indexOf(">") + 1, res[1].lastIndexOf("<"));
+
+const result = {
+    name: name,
+    followers: followers,
+    following: following,
+};
+resp.send(result);
+
+if(!fs.existsSync("db.txt")){
+    fs.open('db.txt', 'w', (err) => {
+        if(err) throw err;
+        console.log('File db.txt created');
+    }); 
+}
+fs.appendFileSync('db.txt', `name: ${result.name} --followers: ${result.followers} --following: ${result.following}\n`, (err)=>{
+    if(err) throw err;
+    console.log("Record appended");
+});
 ```
 <h2 align="center">Вывод</h2>
-Ознакомился с синтаксисом PHP.
+Вспомнил синтаксис PHP. Научился с помощью node js отправлять email, создавать QR-коды, а также парсить сайты.
