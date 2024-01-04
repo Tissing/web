@@ -3,7 +3,7 @@ const app = express();
 const nodemailer = require('nodemailer');
 const QRCode = require('qrcode');
 const axios = require('axios');
-const mysql = require('mysql');
+const fs = require('fs');
 
 app.use(express.static(__dirname + "/public"));
 
@@ -70,8 +70,16 @@ app.get("/parse", async function(req, resp){
     };
     resp.send(result);
 
-
-
+    if(!fs.existsSync("db.txt")){
+        fs.open('db.txt', 'w', (err) => {
+            if(err) throw err;
+            console.log('File db.txt created');
+        }); 
+    }
+    fs.appendFileSync('db.txt', `name: ${result.name} --followers: ${result.followers} --following: ${result.following}\n`, (err)=>{
+        if(err) throw err;
+        console.log("Record appended");
+    });
 });
 
 app.listen(3000, function(req, resp){
