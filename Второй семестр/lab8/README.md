@@ -489,7 +489,7 @@ for($i = 0; $i < count($a); $i++){
 
 
 ### Задачи Node JS 
-1. 
+1. Реализуйте функцию, которая будет парсить JSON-файлы и выводить их содержимое в консоль. 
 ```javascript 
 let data = require('./file.json');
 let string = JSON.stringify(data);
@@ -499,7 +499,7 @@ for (var key in res){
     console.log(key + ": " + value);
 }
 ```
-2. 
+2. Напишите скрипт, который будет перебирать файлы в заданной директории и выводить их имена в консоль. 
 ```javascript 
 const fs = require('fs');
 dir = process.argv[2];
@@ -508,7 +508,7 @@ fs.readdir(dir, (err, files) => {
     console.log(files);
 });
 ```
-3. 
+3. Реализуйте функцию, которая будет отправлять email-уведомления при определенных событиях. 
 ```javascript 
 app.get("/mail", function(req, resp) {
     let transporter = nodemailer.createTransport({
@@ -530,7 +530,7 @@ app.get("/mail", function(req, resp) {
     resp.send('Письмо отправлено!');
 });
 ```
-4. 
+4. Создайте модуль для работы с API сторонних сервисов (например, Google Maps). 
 ```javascript 
 const axios = require("axios");
 
@@ -546,7 +546,7 @@ async function getRandomNumberFact(){
 
 module.exports = {getNumberFact, getRandomNumberFact};
 ```
-5. 
+5. Создайте модуль для работы с графическими изображениями (обработка, изменение размеров и т.д.).
 ```javascript 
 const jimp = require('jimp');
 
