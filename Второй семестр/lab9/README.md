@@ -761,3 +761,4 @@ if(isset($_GET['lab27selectDay']) && isset($_GET['lab27selectMonth']) && isset($
 
 
 <h2 align="center">Вывод</h2>
+Научился работать с СУБД MySQL и модулем PHP mysqli.
